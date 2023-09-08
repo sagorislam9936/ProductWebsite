@@ -1,0 +1,32 @@
+.flexx {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  box-shadow: 1px 1px 6px 5px rgb(133, 133, 159);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(197, 197, 206);
+}
+
+#number{
+    background-color: rgb(207, 205, 205);
+    border-radius: 50px;
+    border: 2px solid rgb(207, 205, 205);
+    padding: 2px 7px 2px 7px;
+    font-size: 25px;
+}
+#generatebtn {
+  background-color: rgb(207, 205, 205);
+  font-size: 15px;
+
+}
