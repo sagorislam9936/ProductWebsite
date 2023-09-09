@@ -23,7 +23,7 @@ Loggin.onclick = () => {
       eml == accInfo.email &&
       pass == accInfo.password
     ) {
-      document.location.href = "/bank.html";
+      document.location.href = "/product.html";
     } else {
       Warning.innerText = "Your info not currect";
       Warning.style.color = "red";
