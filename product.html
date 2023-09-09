@@ -8,44 +8,39 @@
   </head>
   <body>
     <h2 id="logBtn">
-      <button id="logBtnn" >Login</button>
+      <button id="logBtnn">Login</button>
     </h2>
+    <div class="flex">
     <div class="form">
-      <h1 id="totalCullectionn"></h1>
-      
-
-
-
+     
+<h2>Product Details</h2>
       <input type="text" placeholder="Product Name" id="productName" />
       <input type="text" placeholder="Product id" id="productId" />
-      <input type="text" placeholder="product Photo" id="productPhoto" />
-      <input type="text" placeholder="Product Video" id="productVideo" />
+      <input type="file" id="productPhoto" accept="image/png,image/jpg" />
+   
+      <input type="file"  id="productVideo" accept="image/png,image/jpg"/>
       <input type="text" placeholder="Price" id="price" />
       <input type="text" placeholder="Stoct Avi" id="stockAvi" />
       <input type="text" placeholder="Weight" id="weight" />
       <input type="text" placeholder="Description" id="description" />
       <select id="selectUser">
         <option value="Select name">Product catagory</option>
-        <option value="Sagor">Electonic</option>
-        <option value="Tasnim">Grocery</option>
-        <option value="Tasnim">Grocery</option>
-        <option value="Tasnim">Grocery</option>
-        <option value="Tasnim">Grocery</option>
-        <option value="Tasnim">Grocery</option>
+
+        <option value="Fashion">Women's & Girls' Fashion</option>
+        <option value="Health">Health & Beauty</option>
+        <option value="Devices">Electronics Devices</option>
+        <option value="Timepass">TV & Home Appliances</option>
+        <option value="Lifestyle">Home & Lifestyle</option>
+        <option value="Sports">Sports & Outdoors</option>
       </select>
 
       <button id="addToProduct">Add to product</button>
-     
-    <div>
-    <h1 id="totalAmount"></h1>
-    <ul id="productList"></ul>
-  </div>
-        
     </div>
-
-   
-        
-     
+      <div class="product">
+       
+        <ul id="productList"></ul>
+      </div>
+    </div>
 
     <script src="./product.js"></script>
   </body>
