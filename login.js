@@ -1,27 +1,27 @@
-const number = document.getElementById("number");
 const yourEmail = document.getElementById("yourEmail");
 const yourPassword = document.getElementById("yourPassword");
 const Loggin = document.getElementById("Loggin");
 const Warning = document.getElementById("Warning");
-const generatebtn= document.getElementById("generatebtn")
 
+const otpTxt = document.getElementById("otpTxt");
+const otpView = document.getElementById("otpView");
+const generatebtn = document.getElementById("generatebtn");
 
 const accInfo = {
-    otpNum: "randomNumberGenerator",
   email: "sagorislam9604@gmail.com",
   password: "1212",
 };
-
+let randomNumber;
 
 Loggin.onclick = () => {
-    const otpNumber =number;
   const eml = yourEmail.value;
   const pass = yourPassword.value;
-  if ( otpNumber!=="" &&  eml !== "" && pass !== "") {
+  const otpNumber = otpTxt.value;
+  if (otpNumber !== "" && eml !== "" && pass !== "") {
     if (
-        
       eml == accInfo.email &&
-      pass == accInfo.password
+      pass == accInfo.password &&
+      otpNumber == randomNumber
     ) {
       document.location.href = "/product.html";
     } else {
@@ -34,10 +34,15 @@ Loggin.onclick = () => {
   }
 };
 
-const randomNumberGenerator =()=>{
-    const randomNumber = Math.floor(Math.random() * 10000);
-    number.textContent = randomNumber
-}
+/* const randomNumberGenerator = () => {
+  const randomNumber = Math.floor(Math.random() * 10000);
+  number.textContent = randomNumber;
+};
 
-generatebtn.addEventListener('click',randomNumberGenerator,);
-randomNumberGenerator();
+generatebtn.addEventListener("click", randomNumberGenerator);
+randomNumberGenerator(); */
+
+generatebtn.onclick = () => {
+  randomNumber = Math.floor(Math.random() * 10000);
+  otpView.innerText = randomNumber;
+};

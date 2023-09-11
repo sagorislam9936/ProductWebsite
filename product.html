@@ -11,33 +11,31 @@
       <button id="logBtnn">Login</button>
     </h2>
     <div class="flex">
-    <div class="form">
-     
-<h2>Product Details</h2>
-      <input type="text" placeholder="Product Name" id="productName" />
-      <input type="text" placeholder="Product id" id="productId" />
-      <input type="file" id="productPhoto" accept="image/png,image/jpg" />
-   
-      <input type="file"  id="productVideo" accept="image/png,image/jpg"/>
-      <input type="text" placeholder="Price" id="price" />
-      <input type="text" placeholder="Stoct Avi" id="stockAvi" />
-      <input type="text" placeholder="Weight" id="weight" />
-      <input type="text" placeholder="Description" id="description" />
-      <select id="selectUser">
-        <option value="Select name">Product catagory</option>
+      <div class="form">
+        <h2>Product Details</h2>
+        <input type="text" placeholder="Product Name" id="productName" />
+        <input type="text" placeholder="Product id" id="productId" />
+        <input type="text" id="productPhoto" placeholder="product picture" />
 
-        <option value="Fashion">Women's & Girls' Fashion</option>
-        <option value="Health">Health & Beauty</option>
-        <option value="Devices">Electronics Devices</option>
-        <option value="Timepass">TV & Home Appliances</option>
-        <option value="Lifestyle">Home & Lifestyle</option>
-        <option value="Sports">Sports & Outdoors</option>
-      </select>
+        <input type="text" id="productVideo" placeholder="Product video" />
+        <input type="text" placeholder="Price" id="price" />
+        <input type="text" placeholder="Stoct Avi" id="stockAvi" />
+        <input type="text" placeholder="Weight" id="weight" />
+        <input type="text" placeholder="Description" id="description" />
+        <select id="selectUser">
+          <option value="Select name">Product catagory</option>
 
-      <button id="addToProduct">Add to product</button>
-    </div>
+          <option value="Fashion">Women's & Girls' Fashion</option>
+          <option value="Health">Health & Beauty</option>
+          <option value="Devices">Electronics Devices</option>
+          <option value="Timepass">TV & Home Appliances</option>
+          <option value="Lifestyle">Home & Lifestyle</option>
+          <option value="Sports">Sports & Outdoors</option>
+        </select>
+
+        <button id="addToProduct">Add to product</button>
+      </div>
       <div class="product">
-       
         <ul id="productList"></ul>
       </div>
     </div>

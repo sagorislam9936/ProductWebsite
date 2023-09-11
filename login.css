@@ -16,17 +16,18 @@
   padding-top: 10px;
   padding-bottom: 20px;
   background-color: rgb(197, 197, 206);
+  border-radius: 40px;
 }
 
-#number{
-    background-color: rgb(207, 205, 205);
-    border-radius: 50px;
-    border: 2px solid rgb(207, 205, 205);
-    padding: 2px 7px 2px 7px;
-    font-size: 25px;
+#otpView {
+  background-color: rgb(207, 205, 205);
+  border-radius: 50px;
+  border: 2px solid rgb(207, 205, 205);
+  padding: 2px 7px 2px 7px;
+  font-size: 25px;
 }
 #generatebtn {
   background-color: rgb(207, 205, 205);
   font-size: 15px;
-
+  border-radius: 40px;
 }

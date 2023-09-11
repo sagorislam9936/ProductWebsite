@@ -18,7 +18,7 @@ logBtn.onclick = () => {
 };
 
 let Products = [];
-let totalSaving = 0;
+
 const addProductToList = () => {
   const nameOne = productName.value;
   const nameTwo = productId.value;
@@ -53,7 +53,7 @@ const addProductToList = () => {
     };
 
     Products.push(newProduct);
-    totalSaving = totalSaving + newProduct;
+
     productName.value = "";
     productId.value = "";
     productPhoto.value = "";
@@ -77,21 +77,14 @@ const list = () => {
     Product ID:${product.nameb}
     Product Photo:${product.namec} 
     Product Video:${product.named} 
-   Product Price :${product.namee} 
+    Product Price :${product.namee} 
     Product stockAvi: ${product.namef} 
     Product Weight :${product.nameg}
     Product Description :${product.nameh}
-    Product Seller :${product.namei} `;
+    Catagory :${product.namei} `;
 
     productList.appendChild(li);
   }
 };
-
-
-
-
-
-
-
 
 addToProduct.onclick = addProductToList;
