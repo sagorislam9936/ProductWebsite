@@ -9,7 +9,7 @@ const generatebtn = document.getElementById("generatebtn");
 
 const accInfo = {
   email: "sagorislam9604@gmail.com",
-  password: "1212",
+  password: 1212,
 };
 let randomNumber;
 
