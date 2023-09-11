@@ -14,7 +14,7 @@ const productList = document.getElementById("productList");
 const logBtn = document.getElementById("logBtn");
 
 logBtn.onclick = () => {
-  document.location.href = "./login.html";
+  document.location.href = "./index.html";
 };
 
 let Products = [];

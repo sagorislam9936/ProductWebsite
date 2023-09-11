@@ -23,7 +23,7 @@ Loggin.onclick = () => {
       pass == accInfo.password &&
       otpNumber == randomNumber
     ) {
-      document.location.href = "/product.html";
+      document.location.href = "./indextwo.html";
     } else {
       Warning.innerText = "Your info not currect";
       Warning.style.color = "red";
